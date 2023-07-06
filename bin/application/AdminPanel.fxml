@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="457.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminPanelController">
+   <children>
+      <TableView fx:id="tableView" layoutX="410.0" layoutY="35.0" prefHeight="222.0" prefWidth="340.0" />
+      <Button fx:id="kEkleButton" layoutX="2.0" layoutY="285.0" mnemonicParsing="false" onAction="#ekleClick" prefHeight="26.0" prefWidth="166.0" text="Kullanıcı Ekle" />
+      <Button fx:id="kSilButton" layoutX="2.0" layoutY="332.0" mnemonicParsing="false" onAction="#silClick" prefHeight="26.0" prefWidth="166.0" text="Kullanıcı Sil" />
+      <TextField fx:id="aramaTextField" layoutX="2.0" layoutY="237.0" prefHeight="26.0" prefWidth="166.0" promptText="Arama" />
+      <Label fx:id="label" layoutX="18.0" layoutY="206.0" prefHeight="27.0" prefWidth="134.0" text="Arama Kutusu">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="guncelleButton" layoutX="2.0" layoutY="375.0" mnemonicParsing="false" onAction="#guncelleClick" prefHeight="26.0" prefWidth="166.0" text="Güncelle" />
+      <TextField fx:id="idtxtfield" layoutX="2.0" layoutY="1.0" prefHeight="26.0" prefWidth="150.0" promptText="ID" />
+      <TextField fx:id="nametxtfield" layoutX="2.0" layoutY="45.0" prefHeight="26.0" prefWidth="150.0" promptText="Name" />
+      <TextField fx:id="surnametxtfield" layoutX="2.0" layoutY="83.0" promptText="Surname" />
+      <TextField fx:id="debttxtfield" layoutX="2.0" layoutY="122.0" promptText="Debt" />
+      <Button fx:id="borcEkleButton" layoutX="2.0" layoutY="417.0" mnemonicParsing="false" onAction="#borcEkleClick" prefHeight="26.0" prefWidth="166.0" text="Borç Ekle" />
+      <TableView fx:id="tableViewAccounts" layoutX="187.0" layoutY="36.0" prefHeight="222.0" prefWidth="200.0" />
+      <TextField fx:id="usernametxtfield" layoutX="2.0" layoutY="162.0" promptText="Username" />
+      <Button fx:id="userSilButton" layoutX="187.0" layoutY="417.0" mnemonicParsing="false" onAction="#userSilClick" prefHeight="26.0" prefWidth="166.0" text="Username ve Password Sil" />
+      <TableView fx:id="tableViewCodes" layoutX="432.0" layoutY="292.0" prefHeight="166.0" prefWidth="200.0" />
+      <Label layoutX="173.0" layoutY="17.0" text="USERNAME VE PASSWORD TABLOSU">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="418.0" layoutY="17.0" text="AD,SOYAD VE BORÇ TABLOSU">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="432.0" layoutY="275.0" text="DOĞRULAMA KODU TABLOSU">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

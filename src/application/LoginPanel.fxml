@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="500.0" maxWidth="500.0" minHeight="500.0" minWidth="500.0" prefHeight="0.0" prefWidth="0.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginPanelController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="500.0" prefWidth="256.0" style="-fx-background-color: #0598ff;" />
+      <AnchorPane layoutX="253.0" prefHeight="503.0" prefWidth="222.0">
+         <children>
+            <TextField fx:id="usernameTextField" layoutX="72.0" layoutY="211.0" promptText="Kullanıcı adını giriniz." style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="passwordField" layoutX="72.0" layoutY="270.0" prefHeight="25.0" prefWidth="149.0" promptText="Şifreyi giriniz." style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button fx:id="loginbutton" layoutX="91.0" layoutY="342.0" mnemonicParsing="false" onAction="#button_click" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-background-color: #0598ff;" text=" GİRİŞ YAP" textFill="WHITE" />
+            <FontAwesomeIconView fill="#0598ff" glyphName="KEY" layoutX="36.0" layoutY="292.0" size="20" text="">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView fill="#0598ff" glyphName="USER" layoutX="39.0" layoutY="232.0" size="20" text="" />
+            <FontAwesomeIconView fill="#0598ff" glyphName="USERS" layoutX="102.0" layoutY="103.0" size="60" text="" wrappingWidth="44.14285659790039" />
+            <Label layoutX="94.0" layoutY="124.0" style="-fx-background-color: #0598ff; -fx-background-color: TRANSPARENT;" text="GİRİŞ PANELİ" textFill="#0598ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="loginLabel" layoutX="77.0" layoutY="312.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
