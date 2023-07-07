@@ -1,5 +1,5 @@
 # javafx app
- basic javafx app for school assignment
+ basic javafx app for school assignment using mysql
 
 # LoginPanel
  ![LoginPanel](https://github.com/alpersener/javafxapp/blob/main/foto1.jpg)
